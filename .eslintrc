@@ -1,0 +1,24 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "atom": false
+  },
+  "plugins": [
+    "prettier"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [2, {
+      "trailingComma": "es5",
+      "singleQuote": true,
+      "bracketSpacing": false,
+      "parser": "babylon"
+    }]
+  }
+}
