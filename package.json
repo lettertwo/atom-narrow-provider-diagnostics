@@ -1,5 +1,5 @@
 {
-  "name": "narrow-nuclide-diagnostics",
+  "name": "atom-narrow-provider-diagnostics",
   "version": "0.1.0",
   "description": "Narrow nuclide diagnostics (linter, flow, etc)",
   "main": "./lib/main",
@@ -10,12 +10,12 @@
     "linter",
     "flow"
   ],
-  "repository": "https://github.com/lettertwo/atom-narrow-provider-nuclide-diagnostics",
+  "repository": "https://github.com/lettertwo/atom-narrow-provider-diagnostics",
   "author": "Eric Eldredge <lettertwo@gmail.com>",
   "license": "MIT",
   "activationCommands": {
     "atom-text-editor": [
-      "narrow:nuclide-diagnostics"
+      "narrow:diagnostics"
     ]
   },
   "engines": {
@@ -25,6 +25,11 @@
     "narrow": {
       "versions": {
         "1.0.0": "consumeNarrow"
+      }
+    },
+    "atom-ide-diagnostics-store": {
+      "versions": {
+        "0.2.0": "consumeObservableDiagnosticUpdates"
       }
     }
   },
